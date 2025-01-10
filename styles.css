@@ -100,6 +100,13 @@ body {
 h1 {
 	text-align: center;
 	color: #333;
+	line-height: normal;
+	margin-bottom: 10px;
+}
+
+h2 {
+	line-height: normal;
+	margin-bottom: 10px;
 }
 
 textarea {
@@ -110,12 +117,13 @@ textarea {
 	border: 1px solid #ccc;
 	border-radius: 5px;
 	font-size: 16px;
+	resize: none;
 }
 
 button {
 	width: 100%;
 	padding: 10px;
-	background-color: #4caf50;
+	background-color: black;
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -123,7 +131,19 @@ button {
 	cursor: pointer;
 }
 
-button:hover {
+#parse-button {
+	background-color: #f7a515;
+}
+
+#parse-button:hover {
+	background-color: #ffb22d;
+}
+
+#paste-parse-button {
+	background-color: #4caf50;
+}
+
+#paste-parse-button:hover {
 	background-color: #45a049;
 }
 
@@ -143,7 +163,7 @@ pre {
 	margin-top: 10px;
 	width: 100%;
 	padding: 10px;
-	background-color: #007bff;
+	background-color: #8200ff;
 	color: white;
 	border: none;
 	border-radius: 5px;
@@ -152,5 +172,15 @@ pre {
 }
   
 #copy-button:hover {
-	background-color: #0056b3;
+	background-color: #992cff;
+}
+
+.button-group {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 15px;
+}
+
+button {
+	flex: 1;
 }
